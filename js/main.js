@@ -5,7 +5,6 @@ var tl4 = new TimelineMax();
 var tl5 = new TimelineMax({onUpdate: updatePercentage});
 const controller = new ScrollMagic.Controller();
 
-tl.from('.main-container', .5, {y:100, opacity: 0});
 tl2.from('.project-violet', .5, {x: -70, opacity: 0});
 tl2.from('.project-green', .6, {x: 70, opacity: 0});
 tl2.from('.project-red', .7, {x: -70, opacity: 0});
@@ -13,15 +12,6 @@ tl3.from('.technology', .5, {scale: 0, opacity: 0});
 tl3.to('.technology', .1, {scale: 1.05, opacity: 100});
 tl3.to('.technology', .4, {scale: 1, opacity: 100});
 tl4.from('.event', .6, {y: 100, opacity: 0});
-tl5.to('.big-logo-container img', .6, {height: '300px'});
-const scene_beginning = new ScrollMagic.Scene({
-            triggerHook: "onLeave",
-            duration: "50%",
-})
-  .setPin("body")
-  .setTween(tl5)
-
-		.addTo(controller);
 const scene = new ScrollMagic.Scene({
             triggerHook: "onLeave",
             offset: '70px',

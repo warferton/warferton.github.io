@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap");
+
 html,
 body {
   background-image: linear-gradient(black, black, black, white);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: STIXIntegralsUpD, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
 }
@@ -17,7 +27,9 @@ i {
 p {
   line-height: 2.25rem;
 }
-
+.common-container {
+  opacity: 0;
+}
 .container {
   display: grid;
   gap: 2rem;
@@ -27,9 +39,11 @@ div.big-logo-container {
   display: flex;
   justify-content: center;
 }
+
 div.big-logo-container img {
   height: 500px;
 }
+
 div.main-container {
   background-color: white;
   margin: 1rem 5.5rem 0 5.5rem;
@@ -48,7 +62,7 @@ div.main-container {
 .title-heading {
   font-weight: 500;
   font-size: 24px;
-  font-style: "D";
+  font-style: "Advent Pro", sans-serif;
   text-decoration: underline;
   letter-spacing: 5px;
 }
@@ -57,7 +71,7 @@ div.main-container {
   font-weight: 500;
   margin-top: 0.5rem;
   font-size: 20px;
-  font-style: "D";
+  font-style: "Advent Pro", sans-serif;
   text-decoration: underline;
   letter-spacing: 5px;
 }
@@ -341,7 +355,7 @@ div.footer-logo {
   .title-heading {
     font-weight: 500;
     font-size: 20px;
-    font-style: "D";
+    font-style: "Advent Pro", sans-serif;
     text-decoration: underline;
     letter-spacing: 1.5px;
     text-align: center;
@@ -351,7 +365,7 @@ div.footer-logo {
     font-weight: 500;
     margin-top: 0.5rem;
     font-size: 18px;
-    font-style: "D";
+    font-style: "Advent Pro", sans-serif;
     text-decoration: underline;
     letter-spacing: 1px;
   }
@@ -516,6 +530,7 @@ div.footer-logo {
     box-shadow: 0px 0px 5px grey;
     border-radius: 5px;
     transition: all 0.3s;
+    text-align: center;
   }
   .card img {
     margin: auto;
@@ -523,4 +538,8 @@ div.footer-logo {
   .card ul {
     padding: 0;
   }
+}
+
+.scroll {
+  opacity: 1;
 }
