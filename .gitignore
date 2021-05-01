@@ -1,0 +1,8 @@
+.cache
+.parcel-cache
+img
+js
+node_modules
+styles
+index.html
+pack*
